@@ -104,7 +104,7 @@ class tree
    {
       node.show=false;
       nodes.add(node);
-      if(node.id.length < 14) {
+      if(node.id.length < 3) {
         for (int i = 0;i < 3;i++) {
           node.children.add(node.id + i.toString());
           treenode childnode = new treenode(node.id + i.toString(), []);
