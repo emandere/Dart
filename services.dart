@@ -5,7 +5,7 @@ import 'dart:io';
 
 import 'package:rpc/rpc.dart';
 
-import '../lib/treeapi.dart';
+import 'lib/treeapi.dart';
 
 const String _API_PREFIX = '/api';
 final ApiServer _apiServer =
@@ -13,8 +13,6 @@ new ApiServer(apiPrefix: _API_PREFIX, prettyPrint: true);
 
 main() async
 {
-
-
   _apiServer.addApi(new TreeApi());
   _apiServer.enableDiscoveryApi();
 
